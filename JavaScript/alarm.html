@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <script>
+    function sleepOrNot() {
+        var now = new Date();
+        var month = now.getMonth();
+        var dayOfMonth = now.getDate();
+        var dayOfWeek = now.getDay();
+
+        if (month == 0 && dayOfMonth == 1) {
+            message = "Sleep In."
+        }
+        else if (month == 6 && dayOfMonth == 4) {
+            message = "Sleep In."
+        }
+        else if (month == 11 && dayOfMonth == 25) {
+            message = "Sleep In."
+        }
+        else if (dayOfWeek == 0 ^ dayOfWeek == 6) {
+            message = "Sleep In."
+        }
+        else {
+            message = "Get up!"
+        }
+        
+        document.getElementById('message').innerHTML = message;
+    }
+    </script>
+</head>
+<body>
+    <h1>Go ahead, click to see if you can sleep in.</h1>
+    <button type="button" onclick="sleepOrNot()">Sleep in?</button>
+    <div id="message"></div>
+</body>
+</html>

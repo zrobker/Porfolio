@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <script>
+        function display() {
+        // let one = document.getElementById('one').value;
+        // let two = document.getElementById('two').value;
+        // let three = parseFloat(document.getElementById('three').value);
+
+        let list0 = [ 4, -1, 0, 5, 9, 1, 2, 4 ]
+        let list1 = [-72.3, 3000, 873, 2312, 68, 7501.3 ]
+        let list2 = [ 70, 950, 671, 6 ]
+
+        let result = add();
+
+        document.getElementById('output').innerHTML = result;   
+        }
+
+        function add() {
+            let a = 2, b = -3, c = 14, d = 5;
+            let result = 6 + c / a % d + b;
+            return result;
+        }
+    </script>
+</head>
+<body>
+    
+    <h1>result</h1>
+
+    <hr>
+    <!-- one <input type="text" id="one">
+    two <input type="text" id="two"> -->
+     <!-- <input type="text" id="three"> -->
+    <button type="button" onclick="display()">Display</button>
+    <br>
+    <div id="output"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scripture</title>
+    <script>
+        
+        function applyScripture() {
+            
+            let name = document.getElementById('nameInputBox').value;
+        
+            
+            let scripture = "And behold, because of the things which I have seen," +
+                " I have reason to rejoice in the Lord because of Nephi and also of " + name +
+                "; for I have reason to suppose that they, and also many of thier seed, will be saved.";
+        
+        
+            document.getElementById('outputDiv').innerHTML = scripture;
+        }
+        </script>
+</head>
+<body>
+    Please enter your name: <input type="text" id="nameInputBox">    
+<button type="button" onclick="applyScripture()">Verse</button>
+<div id="outputDiv"></div>
+</body>
+</html>

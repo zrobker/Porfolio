@@ -1,0 +1,21 @@
+@media screen and (min-width: 64em) { 
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .example {
+        align-self: stretch;
+        margin: .2em;
+        padding: .2em;
+    }
+
+    #ex1 {
+        grid-column: 1/2;
+    }
+    #ex2 {
+        grid-column: 2/3;
+    }
+    #ex3 {
+        grid-column: 3/4;
+    }
+}

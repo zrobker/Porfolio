@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powers</title>
+
+    <script>
+        function Powers() {
+
+            let line_in_table = "";
+            let table = "";
+            let answer = 1;
+
+            for (let number =0; number <= 31; number+=1) {
+                line_in_table = "2 to the power of "+ number+" = "+ answer;
+                table += line_in_table + "<br />";
+                answer += answer;
+            }
+        document.getElementById('output').innerHTML = table;   
+        }
+
+    </script>
+</head>
+<body>
+    
+    <h1>Click to Display Power of 2 Table</h1>
+
+    <hr>
+
+    <button type="button" onclick="Powers()">Submit</button>
+    <br>
+    <div id="output"></div>
+</body>
+</html>

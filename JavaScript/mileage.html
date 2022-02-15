@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles Per Gallon</title>
+    <script>
+    function milesPerGallon() {
+        let startMiles = parseFloat(document.getElementById('startMiles').value);
+        let endMiles = parseFloat(document.getElementById('endMiles').value);
+        let gallons = parseFloat(document.getElementById('gallons').value);
+        let mpg = Math.round(((endMiles - startMiles) / gallons) *100 ) /100;
+        document.getElementById('mpgOutput').innerHTML = mpg + " miles per gallon";
+    }
+    </script>
+</head>
+<body>
+    <h1>Miles per Hour Calculator</h1>
+    <br>
+    Enter starting mileage: <input type="text" id="startMiles"> 
+    <br>
+    Enter ending mileage: <input type="text" id="endMiles">
+    <br>
+    Enter amount of gas used in gallons: <input type="text" id="gallons">
+    <br>
+    <button type="button" onclick="milesPerGallon()">Calculate</button>
+    <div id="mpgOutput"></div>
+</body>
+</html>

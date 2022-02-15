@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat:wght@700&display=swap');
+
+/* everything */
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2em; 
+}
+
+/* hearder and navigation */
+
+.logo {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.headings {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* align-content: center;
+    justify-content: center; */
+}
+.date {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    text-align: center;
+}
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    float: right;
+    grid-row: 1/2;
+    grid-column: 2/4;
+    
+
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+
+nav a:hover {
+    background-color: #bbb;
+    color: #36454f;
+    --d: 75%;
+}
+nav ul {
+    background-color: #E5DDDC; 
+}
+
+nav ul li a {
+    
+	display: block;
+	color: black;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	transition: 0.5s;
+}
+
+/* body and main */
+
+body {
+    font-family: "Helvetica", sans-serif;
+    padding: 25px 5px;
+    margin: 0;
+    background-color: #FF695C;  
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+main {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.spotlights {
+    background-color: #FF695C;
+}
+
+.box {
+    background-color: #E5DDDC;
+    margin: 10px;
+}
+.notsmall {
+    display: none;
+    background-color: #E5DDDC;
+    margin: 10px;
+}
+.onlylarge {
+    display: none;
+    background-color: #E5DDDC;
+    margin: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #E5DDDC;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 2em;
+}
+#info {
+    text-align: right;
+    grid-row: 1/2;
+    border-bottom: black;
+    border-width: 1em;
+}

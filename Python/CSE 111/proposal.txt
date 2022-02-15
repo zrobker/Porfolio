@@ -1,0 +1,30 @@
+Significant Program Proposal
+
+(This is a proposal. All proposals are written with our best knowledge
+at the beginning of a project. As we progress from the beginning to the
+end of a project, we gain more knowledge, and some of the ideas we
+proposed change. This is part of completing any project and is fine.
+However, we still must write a proposal so that our teachers or
+supervisors know what we intend to do. Please answer each of the
+following questions to the best of your knowledge.)
+
+1. What is the title of your program? Debt Snowball Calculator (debt_snowball_calculator.py)
+
+2. What real world problem will your program address or help to solve? My program will help the user find out how fast they can pay off dept, using the debt snowball.
+by reading a csv file with their debts, amounts, interest percentage, and minimum payments. Based on the starting monthly amount the user has free after paying minimum 
+payments on all but the smallest debt it can put towards the debt snowball it will then start paying off the smallest debt, no matter the interest rate. It will track the amount 
+of time it will take for someone to be debt free.
+
+3. What will you learn from developing this program? I will learn a lot while developing this program, it will definetely be the biggest project I have ever attemped with python.
+I will learn better how to manipulate and read csv files. I will also learn a lot about working with more complex mathematic functions and learning how to test them using pytest.
+Other than coding skills it will help me push myself to problem solve and understand finances better.
+
+4. What Python modules will your program use? (Some examples are: csv,
+datetime, functools, matplotlib, math, pandas, pytest, random, requests,
+and tkinter.) In my program I will use pytest, csv, math, and posibly datetime.
+
+5. Will you separate your Python program into functions that each
+perform a single task? Yes I will separate my python program into functions. For example I will use a function to read a csv file and return a dictionary/list, 
+Then another function to find the smallest debt, Etc.. Then I will return all funtions to a main function where it will print the amount of time.
+
+6. Will you write test functions to test many of your program functions? Yes I am going to use pytest to test my program functions, and yes I am going to try to write them before the program itself.

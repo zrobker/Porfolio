@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarts to liter</title>
+    <script>
+    function quartsToLiters() {
+        let text = document.getElementById('quartsInput').value;
+        let q = parseFloat(text);
+        let l = Math.round((q * 0.946353)*100)/100;
+        document.getElementById('litersOutput').innerHTML = l +" liters";
+    }
+    </script>
+</head>
+<body>
+    <h1>Quarts to Liters Calculator</h1>
+    Enter amount in Quarts: <input type="text" id="quartsInput">  
+    <button type="button" onclick="quartsToLiters()">Convert</button>
+    <div id="litersOutput"></div>
+</body>
+</html>

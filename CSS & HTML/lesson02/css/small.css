@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    text-align: center;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    background-color: white;  
+    }
+footer {
+    background-color: rgb(56, 153, 243);
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    padding: 1em;
+    }
+header {
+    background-color: rgb(56, 153, 243);
+    color: black;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;    
+}
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2em;
+}
+.example {
+    background-color: rgb(255, 195, 237);
+    margin: 3em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    font-family: 'Righteous', cursive;
+}
+h1 {
+    font-size: 3em;
+}
+p {
+    font-size: 1.2em;
+}
+
+#home-link {
+    font-size: 1.7em;
+}

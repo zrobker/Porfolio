@@ -1,0 +1,42 @@
+Please take a few minutes to reflect on your experience in CSE 111 and
+think about the challenges, successes, and all that you've learned
+along the way.
+
+
+Now, please respond thoroughly (1 - 2 paragraphs for each question) to
+the following questions.
+
+1. Describe an experience you had this semester where you saw the power of
+functions.
+
+During the semester I gianed more and more understanding around functions, I knew prior that many functions
+were built into python itself and others could be imported. But I think the thing that made me realize the true 
+power of functions was when we learned to write our own. This was huge for me because now I would not be limited 
+to those that were in python itself rather I could make anything a funtion. And the assignment that really 
+showed me their power was the assignment where we had to use different functions to produce sentences that gramatically
+made sense. I was able to use many different fuctions to produce basic random sentences and while mine were very basic
+it gave me a small taste of what many more funcitons correctly organized and written could do.
+
+
+
+2. In your judgment, what is the value of test functions?
+
+One of the values of writing test functions is that instead of having to go through the process of entering every possible
+senario to make sure your function works correctly you can test to make sure a specific goal is met. The implications of this
+can greatly save time when it comes to working with files or imputs that are very large. Also when having to write a new fuction into
+code in a progeram that already exists you can test it to make sure that your new function has not had and unexpected effect on 
+something else in your code. Since your test function will specifically tell you where your code is failing. Overall if doen correctly
+up from test funtions can save a lot of time later down the road and can save you from unexpected errors.
+
+
+
+3. Describe your process for troubleshooting and fixing a program that
+has a problem. What is one thing you can do to improve your process?
+
+My process for troubleshooting and fixing a program can vary depending on my code and the situation but normally
+I mainly rely on the debugging tool within VS code. Whether my code is just breaking and giving errors messages or is 
+just simply giving the wrong output I will place a breakpoint around the area I think is giving me trouble. Then I will run 
+through the debugging process watching the variables and other infomation to make sure it looks as expected until I find the line of code 
+that is causing the error. Usually while doing this it helps me see more clearly what my funtions and other code are actually
+doing and see what else needs to be done. Perhaps I could improve by learning better the different types of errors and what they mean.
+ 

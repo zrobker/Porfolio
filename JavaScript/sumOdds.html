@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumOdds</title>
+
+    <script>
+        function sumOdds() {
+            let end = parseInt(document.getElementById("end").value);
+            let total = 0;
+            for (let start =1; start <= end; start+=2) {
+                total += start;
+            }
+        document.getElementById('output').innerHTML = "The sum is " +total;   
+        }
+
+    </script>
+</head>
+<body>
+    
+    <h1>Sum up the odd numbers</h1>
+
+    <hr>
+
+    <label for="end"></label>
+
+    <input type="number" id="end">
+
+    <button type="button" onclick="sumOdds()">Sum Odds</button>
+
+    <div id="output"></div>
+</body>
+</html>

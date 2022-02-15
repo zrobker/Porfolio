@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <script>
+    function checkCalculation() {
+        let numOne = parseFloat(document.getElementById('firstNumber').value);
+        let operator = document.getElementById('operator').value;
+        let numTwo = parseFloat(document.getElementById('secondNumber').value);
+        let answer = parseFloat(document.getElementById('answer').value);
+        let total = 0
+        let message = ""
+
+        if (operator =="+"){
+            total = numOne + numTwo
+            }
+        else if (operator =="-"){
+            total = numOne - numTwo
+            }
+        else if (operator =="*"){
+            total = numOne * numTwo
+            }
+        else {
+            total = numOne / numTwo
+            }
+
+        if (total == answer) {
+            message = "Correct! Good job!"
+            }
+        else {
+            message = "Incorrect! Try again!"
+            }
+
+        
+
+        document.getElementById('Message').innerHTML = message;
+    }
+    </script>
+</head>
+<body>
+    <h1>Test Your Math Skills</h1>
+    <input type="number" id="firstNumber">
+    <input type="text" id="operator">
+    <input type="number" id="secondNumber">
+    = <input type="number" id="answer">
+    <button type="button" onclick="checkCalculation()">Check</button>
+    <div id="Message"></div>
+</body>
+</html>

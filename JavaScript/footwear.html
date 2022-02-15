@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear</title>
+    <script>
+    function pickingShoes() {
+        let text = document.getElementById('weatherInput').value;
+        let shoes = ""
+        if (text == "hot"){
+            shoes = "sandals";
+        }
+        else if (text == "rain"){
+            shoes = "galoshes";
+        } 
+        else if (text == "snow"){
+            shoes = "boots";
+        }
+        else {
+            shoes = "shoes"
+        }
+        document.getElementById('shoeOutput').innerHTML = "You should wear " + shoes;
+    }
+    </script>
+</head>
+<body>
+    <h1>Picking your shoes</h1>
+    Enter weather type: <input type="text" id="weatherInput">  
+    <button type="button" onclick="pickingShoes()">Decide</button>
+    <div id="shoeOutput"></div>
+</body>
+</html>

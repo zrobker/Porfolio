@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <script>
+    function discountDecider() {
+        var dayOfWeek = new Date().getDay();
+        let subtotal = parseFloat(document.getElementById('subtotal').value);
+        let tax = .06
+        let total = 0
+        let discount = .1
+    
+        if (dayOfWeek == 2 ^ dayOfWeek == 3 && subtotal > 50) {
+            discountTotal = subtotal -(subtotal * discount)
+            total = Math.round((discountTotal+(discountTotal*tax))*100) /100
+        }
+        else {
+            total = Math.round((subtotal +(subtotal * tax))*100) /100
+        }
+        document.getElementById('totalOutput').innerHTML = "Total = $" +total;
+    }
+    </script>
+</head>
+<body>
+    <h1>Lets see if you get a discount!</h1>
+    <br>
+    Enter subtotal: <input type="text" id="subtotal"> 
+    <br>
+    <button type="button" onclick="discountDecider()">Submit</button>
+    <div id="totalOutput"></div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+#personal {
+    background-color: rgb(56, 153, 243);
+    color: black;
+    border-radius: 5px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 1fr 1fr;
+    }
+body {
+    font-family: "Helvetica", sans-serif;
+    padding: 25px 5px;
+    margin: 0;
+    background-color: rgb(255, 195, 237);  
+    }
+footer {
+    background-color: rgb(56, 153, 243);
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    padding: 1em;
+    }
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2em;
+    
+}
+#list {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 1em; 
+    padding: 1em;
+
+}
+#image {
+    width: 200px;
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    justify-self: center;
+    align-self: center;
+    padding: 2em;
+}
+#name {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+    padding-right: 100px;
+}
+h1, h2 {
+    font-family: 'Righteous', cursive;
+}
+h1 {
+    font-size: 3em;
+}
